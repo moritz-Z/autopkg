@@ -1,5 +1,4 @@
 #  [Moritz-Z] AutoPkg recipes
-===============
 
 Many of these recipes were created with the aid of [Recipe Robot](https://github.com/homebysix/recipe-robot), an app you should definitely check out.
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of Photo Mechanic 6 and creates a package.</string>
+	<key>Identifier</key>
+	<string>com.github.moritz-Z.pkg.PhotoMechanic6</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Photo Mechanic 6</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.moritz-Z.download.PhotoMechanic6</string>
+	<key>Process</key>
+	<array>
+		<dict>
+		    <key>Arguments</key>
+		    <dict>
+		        <key>find</key>
+		        <string>, build </string>
+		        <key>input_string</key>
+		        <string>%version%</string>
+		        <key>replace</key>
+		        <string>-</string>
+		    </dict>
+		    <key>Processor</key>
+		    <string>com.github.homebysix.FindAndReplace/FindAndReplace</string>
+		</dict>
+		<dict>
+				<key>Arguments</key>
+				<dict>
+						<key>find</key>
+						<string>(</string>
+						<key>input_string</key>
+						<string>%output_string%</string>
+						<key>replace</key>
+						<string></string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.homebysix.FindAndReplace/FindAndReplace</string>
+		</dict>
+		<dict>
+				<key>Arguments</key>
+				<dict>
+						<key>find</key>
+						<string>)</string>
+						<key>input_string</key>
+						<string>%output_string%</string>
+						<key>replace</key>
+						<string></string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.homebysix.FindAndReplace/FindAndReplace</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+					<key>version</key>
+					<string>%output_string%</string>
+			</dict>
+			<key>Processor</key>
+			<string>AppPkgCreator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

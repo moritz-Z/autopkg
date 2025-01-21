@@ -47,14 +47,16 @@ If 'StopProcessingIf' condition applies, AutoPackager stop processing a recipe.
 JamfPatchChecker: WARNING: Could not find matching version '132.0.6834.80' in patch softwaretitle 'Google Chrome'.
 Latest reported version is '132.0.6834.84'.
 {'Output': {'jamfpatchchecker_summary_result':
-    {'data': {'     latest_version_found': '132.0.6834.84',
-                    'package_version': '132.0.6834.80',
-                    'patch_softwaretitle': 'Google Chrome',
-                    'patch_softwaretitle_id': '94'},
-    'report_fields':    ['patch_softwaretitle_id',
-                        'patch_softwaretitle',
-                        'package_version',
-                        'latest_version_found'],
+    {'data': {
+        'latest_version_found': '132.0.6834.84',
+        'package_version': '132.0.6834.80',
+        'patch_softwaretitle': 'Google Chrome',
+        'patch_softwaretitle_id': '94'},
+    'report_fields':
+        ['patch_softwaretitle_id',
+        'patch_softwaretitle',
+        'package_version',
+        'latest_version_found'],
     'summary_text': 'The following patch policies were checked in Jamf Pro:'}}}
 
 com.github.moritz-Z.SharedProcessors/StopProcessingIf_Notification
@@ -62,14 +64,17 @@ com.github.moritz-Z.SharedProcessors/StopProcessingIf_Notification
           'predicate': 'patch_version_found != True'}}
 StopProcessingIf_Notification: (patch_version_found != True) is True
 StopProcessingIf_Notification: Personal Message for output to the user
-{'Output': {'deprecation_summary_result': {'data': {'information': 'Personal Message for output to the user',
-                                                    'name': 'Google Chrome',
-                                                    'version': '132.0.6834.80'},
-                                           'report_fields': ['name',
-                                                             'version',
-                                                             'information'],
-                                           'summary_text': 'The following recipes were stoppt by an condition and may have a personal notification:'},
-            'stop_processing_recipe': True}}
+{'Output': {'deprecation_summary_result':
+    {'data': {'information':
+        'Personal Message for output to the user',
+        'name': 'Google Chrome',
+        'version': '132.0.6834.80'},
+    'report_fields': [
+        'name',
+        'version',
+        'information'],
+    'summary_text': 'The following recipes were stoppt by an condition and may have a personal notification:'},
+    'stop_processing_recipe': True}}
 
 
 - summary recipe

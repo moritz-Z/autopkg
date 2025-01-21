@@ -51,7 +51,7 @@ Latest reported version is '132.0.6834.84'.
         'latest_version_found': '132.0.6834.84',
         'package_version': '132.0.6834.80',
         'patch_softwaretitle': 'Google Chrome',
-        'patch_softwaretitle_id': '94'},
+        'patch_softwaretitle_id': 'ID#'},
     'report_fields':
         ['patch_softwaretitle_id',
         'patch_softwaretitle',

@@ -82,7 +82,7 @@ StopProcessingIf_Notification: Personal Message for output to the user
 The following patch policies were checked in Jamf Pro:
     Patch Softwaretitle Id  Patch Softwaretitle  Package Version  Latest Version Found  
     ----------------------  -------------------  ---------------  --------------------  
-    94                      Google Chrome        132.0.6834.80    132.0.6834.84         
+    ID#                     Google Chrome        132.0.6834.80    132.0.6834.84         
 
 The following recipes were stoppt by an condition and may have a personal notification:
     Name           Version        Information                                                                                                                                           
